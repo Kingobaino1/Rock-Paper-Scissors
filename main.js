@@ -4,6 +4,7 @@ let btn1 = document.querySelector('.buttons');
 let keys = document.querySelectorAll('button');
 let displayCount = document.querySelector('.com-count');
 let displayCounts = document.querySelector('.play-count');
+let name = prompt('Enter your name to play')
 
 let computerCount = 0;
 let playerCount = 0;
@@ -70,10 +71,10 @@ keys.forEach((item) => {
 function fiveRounds(){
     if(playerCount + computerCount === 5){
         if(playerCount > computerCount){
-            displays.textContent = `Congratulations!!! You win.`
+            displays.textContent = `Congratulations ${name}!!! You win.`
             displays.style.cssText = 'color: green; font-size: 40px';
         }else if(playerCount < computerCount){
-            displays.textContent = `Oooops!!! Computer Wins.`
+            displays.textContent = `Oooops!!! ${name} you lost to Computer.`
             displays.style.cssText = 'color: red; font-size: 40px';
         }
     } else if(playerCount + computerCount >= 5){
