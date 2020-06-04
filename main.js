@@ -74,7 +74,7 @@ function fiveRounds(){
             displays.textContent = `Congratulations ${name}!!! You win.`
             displays.style.cssText = 'color: green; font-size: 40px';
         }else if(playerCount < computerCount){
-            displays.textContent = `Oooops!!! ${name} you lost to Computer.`
+            displays.textContent = `Oooops!!! ${name} You lost to Computer.`
             displays.style.cssText = 'color: red; font-size: 40px';
         }
     } else if(playerCount + computerCount >= 5){
