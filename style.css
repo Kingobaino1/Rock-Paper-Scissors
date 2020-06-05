@@ -6,23 +6,30 @@ body {
     font-size: 30px;
 }
 .buttons {
-    margin-left: 400px;
-    margin-top: 200px;
-    height: 92px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 div button {
     width: 100px;
     height: 50px;
     margin-left: 50px;
     color: green;
-    position: relative;
 }
+
 .reset {
-    height: 50px;
-    width: 80px;
-    margin-left: 615px;
-    margin-top: 50px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
     color: green;
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
 }
 .play-count {
     text-align-last: right;
