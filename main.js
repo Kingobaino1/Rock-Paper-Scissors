@@ -24,30 +24,28 @@ function computerPlay(){
     let random = Math.floor(Math.random() * options.length);
     computerSelection = options[random];
 }
+function updateScore(){
+    displayCount.textContent = `Player Count  ${playerCount}`
+   displayCounts.textContent = `Computer Count  ${computerCount}`
+}
 
     function playRock(){
         computerPlay()
-    let playerSelection = 'rock';
-    play(computerSelection, playerSelection);
-    displayCount.textContent = `Player Count  ${playerCount}`
-   displayCounts.textContent = `Computer Count  ${computerCount}`
+    play(computerSelection, 'rock');
+    updateScore();  
    fiveRounds();
 }
 
 function playPaper(){
     computerPlay()
-    let playerSelection = 'paper';
-    play(computerSelection, playerSelection);
-   displayCount.textContent = `Player Count  ${playerCount}`
-   displayCounts.textContent = `Computer Count  ${computerCount}`
+    play(computerSelection, 'paper');
+    updateScore();
    fiveRounds();
 }
 function playScissors(){
-    computerPlay()
-    let playerSelection = 'scissors';
-    play(computerSelection, playerSelection);
-    displayCount.textContent = `Player Count  ${playerCount}`
-   displayCounts.textContent = `Computer Count  ${computerCount}`
+    computerPlay();
+    play(computerSelection, 'scissors');
+    updateScore();
    fiveRounds();
 }
 
