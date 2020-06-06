@@ -1,10 +1,9 @@
-body {
-    background-color: gray;
-}
+
 .display {
     margin: 0 auto;
     position: absolute;
     left: 35%;
+    top: 25%;
     font-size: 30px;
 }
 .buttons {
@@ -43,4 +42,10 @@ div button {
     position: absolute;
     right: 0;
     font-size: larger;
+}
+h1 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
 }

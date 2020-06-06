@@ -11,12 +11,12 @@ let playerCount = 0;
 
 function play(computerSelection, playerSelection){
     if(computerSelection === 'rock' && playerSelection === 'paper'|| computerSelection === 'paper' && playerSelection === 'scissors' || computerSelection === 'scissors' && playerSelection === 'rock'){
-displays.textContent = `You win!!! Computer choose ${computerSelection}`
+displays.textContent = `You win! Computer choose ${computerSelection}`
 playerCount ++
     } else if(computerSelection === playerSelection){
-        displays.textContent = `Tie!!! Computer choose ${computerSelection}`
+        displays.textContent = `Tie! Computer choose ${computerSelection}`
     } else{
-        displays.textContent = `You Loose!!! Computer choose ${computerSelection}`
+        displays.textContent = `You Loose! Computer choose ${computerSelection}`
         computerCount++
     }
 }
@@ -29,8 +29,8 @@ function computerPlay(){
         computerPlay()
     let playerSelection = 'rock';
     play(computerSelection, playerSelection);
-    displayCount.textContent = `Player Count is ${playerCount}`
-   displayCounts.textContent = `Computer Count is ${computerCount}`
+    displayCount.textContent = `Player Count  ${playerCount}`
+   displayCounts.textContent = `Computer Count  ${computerCount}`
    fiveRounds();
 }
 
@@ -38,16 +38,16 @@ function playPaper(){
     computerPlay()
     let playerSelection = 'paper';
     play(computerSelection, playerSelection);
-   displayCount.textContent = `Player Count is ${playerCount}`
-   displayCounts.textContent = `Computer Count is ${computerCount}`
+   displayCount.textContent = `Player Count  ${playerCount}`
+   displayCounts.textContent = `Computer Count  ${computerCount}`
    fiveRounds();
 }
 function playScissors(){
     computerPlay()
     let playerSelection = 'scissors';
     play(computerSelection, playerSelection);
-    displayCount.textContent = `Player Count is ${playerCount}`
-   displayCounts.textContent = `Computer Count is ${computerCount}`
+    displayCount.textContent = `Player Count  ${playerCount}`
+   displayCounts.textContent = `Computer Count  ${computerCount}`
    fiveRounds();
 }
 
@@ -71,10 +71,10 @@ keys.forEach((item) => {
 function fiveRounds(){
     if(playerCount + computerCount === 5){
         if(playerCount > computerCount){
-            displays.textContent = `Congratulations ${name}!!! You win.`
+            displays.textContent = `Congratulations ${name}! You win.`
             displays.style.cssText = 'color: green; font-size: 40px';
         }else if(playerCount < computerCount){
-            displays.textContent = `Oooops!!! ${name} You lost to Computer.`
+            displays.textContent = `Oooops! ${name} You lost to Computer.`
             displays.style.cssText = 'color: red; font-size: 40px';
         }
     } else if(playerCount + computerCount >= 5){
