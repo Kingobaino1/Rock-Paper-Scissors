@@ -2,11 +2,13 @@ body {
     background-color: gray;
 }
 .display {
-    margin-left: 500px;
+    margin: 0 auto;
+    position: absolute;
+    left: 35%;
     font-size: 30px;
 }
 .buttons {
-    margin: 0;
+    width: 490px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -22,8 +24,8 @@ div button {
 
 .reset {
     position: absolute;
-    left: 0;
-    top: 50%;
+    left: 43%;
+    top: 65%;
     -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
     color: green;
@@ -32,10 +34,13 @@ div button {
     margin-left: 50px;
 }
 .play-count {
-    text-align-last: right;
+    position: absolute;
+    left: 0;
     font-size: larger;
-    text-decoration-color: red;
+    
 }
 .com-count {
+    position: absolute;
+    right: 0;
     font-size: larger;
 }
