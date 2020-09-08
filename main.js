@@ -26,31 +26,31 @@ function computerPlay(){
 }
 function updateScore(){
     displayCount.textContent = `Player Count  ${playerCount}`
-   displayCounts.textContent = `Computer Count  ${computerCount}`
+    displayCounts.textContent = `Computer Count  ${computerCount}`
 }
 
-    function playRock(){
-        computerPlay()
-    play(computerSelection, 'rock');
-    updateScore();  
-   fiveRounds();
+function playRock(){
+     computerPlay()
+     play(computerSelection, 'rock');
+     updateScore();  
+     fiveRounds();
 }
 
 function playPaper(){
     computerPlay()
     play(computerSelection, 'paper');
     updateScore();
-   fiveRounds();
+    fiveRounds();
 }
 function playScissors(){
     computerPlay();
     play(computerSelection, 'scissors');
     updateScore();
-   fiveRounds();
+    fiveRounds();
 }
 
 function reset(){
-location.reload()
+    location.reload()
 }
 keys.forEach((item) => {
     if(item === keys[0]){

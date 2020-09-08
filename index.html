@@ -7,19 +7,30 @@
     <link href='style.css' rel='stylesheet'>
 </head>
 <body>
+    <main class="d_flex">
+        <div class="text d_flex">
     <h1>Rock-Paper-Scissors</h1>
-    <h4>Select any option to play against the computer. Play <strong>five</strong> rounds to determine the winner.</h4>
-    <div class='display'></div>
-    <div class='com-count'></div>
-    <div class='play-count'></div>
-    <div class='buttons'>
+    <p>Select any option to play against the computer.</p> 
+    <p class="col">Play <span>five</span> rounds to determine the winner.</p>
+    </div>
+    <div class="display d_flex"></div> 
+   <div class="plays d_flex">
+       <div class="com-count d_flex"></div>
+       <div class="play-count"></div>
+   </div>
+    <div class="buttons d_flex">
+        
         <button>Rock</button>
         <button>Paper</button>
         <button>Scissors</button>
+         
     </div >
     <div class='reset'>
         <button>Play Again</button>
     </div>
+    
+
+    </main>
     
     <script src='main.js'></script>
 </body>
